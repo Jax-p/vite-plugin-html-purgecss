@@ -1,0 +1,34 @@
+{
+  "name": "vite-plugin-html-purgecss",
+  "version": "0.1.0",
+  "description": "Purges CSS based on HTML output",
+  "main": "dist/index.js",
+  "author": "Jax-p",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "purgecss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jax-p/vite-plugin-html-purgecss"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.8",
+    "tsup": "^5.4.0",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "vite": "^2.0.0"
+  },
+  "dependencies": {
+    "purgecss": "^4.0.3",
+    "vite": "^2.6.7"
+  }
+}

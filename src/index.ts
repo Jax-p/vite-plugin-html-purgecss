@@ -1,7 +1,6 @@
-import PurgeCSS from "purgecss";
+import PurgeCSS, { UserDefinedSafelist } from "purgecss";
 
-// UserDefinedSafelist but this type is not exported from PurgeCSS
-export default (safeList?: (string|RegExp)[]|object) => {
+export default (safeList?: UserDefinedSafelist) => {
     let _html: string = '';
     return {
         name: 'vite-plugin-html-purgecss',
